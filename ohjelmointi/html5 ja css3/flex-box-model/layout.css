@@ -1,0 +1,36 @@
+html{
+    font-size: 62.5%;
+}
+p{
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+h2{
+    font-size: 2rem;
+    padding: 10px;
+}
+.color-red {
+    background-color: red;
+}
+.color-blue {
+    background-color:blue;
+}
+.color-green {
+    background-color:green;
+}
+
+/*flex käyttö kappaleissa (p) */
+.parent > * {
+    flex-grow: 1
+    flex-basis: 0;
+    order:2;
+}
+.tupla {
+    flex-grow: 2;
+}
+.order-1 {
+    order: 1;
+}

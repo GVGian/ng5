@@ -1,0 +1,67 @@
+/* Mobile first */
+
+html {
+    font-size: 62.5; /*16px * 62,5% = 10px. Tässä oletus on 16px */
+}
+body {
+    padding: 1rem;
+    font-family: 'Open Sans', sans-serif;
+
+}
+h1 {
+    font-size: 2rem; /*rem katsoo html koon */
+    font-family: 'Pacifico', cursive;
+    
+}
+p {
+    font-size: 1.3rem; /*rem katsoo html koon */
+    
+
+    /*määritellään responsiivinen kuva*/
+}
+
+figure { /*Resetissä määritelty display:block!*/
+
+}
+
+figure img {
+    max-width: 100%;
+   
+}
+/* lisätään sivun pääelementtien väliin tilaa 10px 
+h1, p, figure {
+    margin-bottom: 1rem; 
+}
+*/
+body > * { /* body elementin välittömät lapset*/
+    margin-bottom: 1rem;
+}
+
+/* logot figure-tageissä rinnakkain */
+.parent {
+
+
+}
+
+/*parent elementin välittömät lapset*/
+.parent > * {
+
+
+}
+
+/*Mobiilia suuremmat näytöt*/
+@media only screen and (min-width: 426px) {
+    /* logot figure-tageissä rinnakkain */
+.parent {
+    display: flex; /*flex käyttöön .parent-elementin lapsille*/
+    flex-direction: row; /* .parent-elementit lapset rinnakkain*/
+    flex-wrap: nowrap; /*  ... lapset pysyvät yhdellä rivillä */
+
+}
+/*parent elementin välittömät lapset*/
+.parent > * { 
+    flex-grow: 1; /* lapset yhtä leveitä*/
+    flex-basis: 0; /*lapsien minimileveys*/
+}
+
+  }

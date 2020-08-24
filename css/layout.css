@@ -1,0 +1,128 @@
+html {
+    font-size: 62,5%
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    max-width: 60rem;/*leveyden määritys*/
+    
+    
+}
+header {
+    background-color: #69013B;
+    color: #F9DBCD;
+    border-radius: 20px 20px 0 0;
+    padding: 10px;
+}
+
+.ops {
+    border: solid #69013b 1px;
+    padding: 10px;
+}
+p {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.footer-p{
+    padding: 1rem;
+    background-color: #69013B;
+    color: #F9DBCD;
+    border-radius: 0 0 20px 20px;
+    
+}
+/*figure logo oikeaan reunaan*/
+#logo {
+    float: right;
+    width: 10rem;
+    padding: 1rem;
+}
+
+#logo img {
+    max-width: 100%;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+h1 {
+    font-weight: bolder;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-weight: bolder;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+h3 {
+    
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+/*linkkien muotoileminen*/
+a {
+text-decoration: none;
+color: #69013B;
+font-style: italic;
+}
+
+.footer-p a {
+    text-decoration: none;
+    color: #F9DBCD;
+    font-style: italic;
+    }
+
+a:hover {
+    text-decoration: underline;
+    background-color: #69013B;
+    color: #F9DBCD;
+    padding: 0.5rem;
+}
+
+.footer-p a:hover {
+    text-decoration: underline;
+    color: #69013B;
+    background-color: #F9DBCD;
+    padding: 0.5rem;
+}
+
+.sisennys-2rem {
+    padding-left: 2rem;
+}
+.sisennys-4rem {
+    padding-left: 4rem;
+}
+.sisennys-6rem {
+    padding-left: 6rem;
+}
+
+.sisennys-8rem {
+    padding-left: 8rem;
+
+}
+
+ol {
+    
+    list-style: decimal;
+    font-size: 1.5rem; 
+    font-style: italic;
+    color: #69013B;
+}
+
+.himmenna {
+    background-color: rgba(100, 100, 100, 0.2);
+    color: rgba(100, 100, 100, 0.2)
+} 
+
+
+
+
+@media screen and (max-width: 425px) {
+    body{
+        padding: 0;
+    }
+    }
