@@ -1,0 +1,19 @@
+html {
+    font-size: 62,5%
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    max-width: 60rem;/*leveyden määritys*/
+}
+    
+    
+
+
+
+
+
+@media screen and (max-width: 425px) {
+    
+    }

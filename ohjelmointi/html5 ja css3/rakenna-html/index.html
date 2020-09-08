@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        #osa1 {
+            padding: 10px;
+            font-size: 1.6rem;
+
+        }
+        .h1 {
+            padding: 10px;
+        }
+
+        .p2 {
+            padding: 10px;
+        }
+
+        .p3 {
+            padding: 10px;
+}
+    </style>
+</head>
+<body>
+    <!-- 
+    <header class="ylatunniste">
+        <h1>Tämä on artikkelin otsikko</h1>
+        <p>Ensimmäinen on kappale! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, corporis quidem. Architecto qui eius enim sapiente, in reiciendis perferendis. Enim quas maiores dicta magnam non? Hic quos quas dicta minima.</p>
+    </header>
+    <section class="rinnakkain">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nesciunt distinctio, et nemo eius neque similique repudiandae iste sint. Accusantium beatae minima inventore vel laboriosam quos ullam eum, tenetur natus.</p>
+        <figure id="kuvapaikka">
+            <img src="/images/kuva0709.PNG" alt="">
+        </figure>
+    </section>
+
+    <footer class = "footteri">
+        <p>
+           @ 2019 Juhis
+        </p>
+    </footer>
+    -->
+
+
+    <script>
+        // annettaan bodylle id "runko"
+        document.body.id += "runko";
+
+        //esitellän muuttujat
+        var runko = document.getElementById("runko");
+        var ylatunniste = document.createElement("header");
+        var section = document.createElement("section");
+        var footteri = document.createElement("footer");
+        var image = document.createElement("figure");
+
+        var h1 = document.createElement("h1");
+        var p1 = document.createElement("p");
+        var p2 = document.createElement("p");
+        var p3 = document.createElement("p");
+        var k1 = document.createElement("k1");
+
+        
+        var text0 = document.createTextNode("Tämä on artikkelin otsikko");
+        var text1 = document.createTextNode("Ensimmäinen on kappale! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, corporis quidem. Architecto qui eius enim sapiente, in reiciendis perferendis. Enim quas maiores dicta magnam non? Hic quos quas dicta minima.");
+        var text2 = document.createTextNode("Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nesciunt distinctio, et nemo eius neque similique repudiandae iste sint. Accusantium beatae minima inventore vel laboriosam quos ullam eum, tenetur natus.");
+        var text3 = document.createTextNode("@ 2019 Juhis");
+        var kuva1 = document.getElementById("example");
+        
+        console.log(kuva1.getAttribute("src", "images\kuva0709.PNG"));
+        
+        
+
+        // nimetään html-elementit
+        ylatunniste.id="ylatunniste";
+        section.id = "rinnakkain";
+        image.id = "kuvapaikka";
+        h1.className = "h1";
+        p1.className = "p1";
+        p2.className = "p2";
+        p3.className = "p3";
+        k1.className = "k1";
+
+        // lisätään h1 ja p-sisällöt
+        h1.appendChild(text0);
+        p1.appendChild(text1);
+        p2.appendChild(text2);
+        p3.appendChild(text3);
+        k1.appendChild(kuva1);
+
+        //lisätään h1 ja p1 -elementit ylatunnisteen sisään
+        ylatunniste.appendChild(h1);
+        ylatunniste.appendChild(p1);
+
+        //lisätään p-elementit sectionin sisään
+        section.appendChild(p2);
+        section.appendChild(image);
+        image.appendChild(k1);
+        
+
+        //lisätään p-elementit footterin sisään
+        footteri.appendChild(p3);
+       
+        // sijoitetaan html-elementit bodyn sisään
+        runko.appendChild(section); 
+        runko.appendChild(ylatunniste); 
+        runko.appendChild(footteri);
+        runko.appendChild(section);
+
+    </script>
+</body>
+</html>

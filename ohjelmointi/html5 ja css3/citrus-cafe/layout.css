@@ -1,0 +1,211 @@
+/*mobile first*/
+html {
+    font-size: 62,5%;
+}
+body {
+    background-color:#84C15B;
+   
+    font-family: Gotham, Helvetica,Arial, sans-serif;
+    padding: 0px;
+    border: solid white 10px;
+}
+
+.navigationbar {
+    padding: 0;
+}
+
+/*valikko-headerpalkki*/
+
+.menu {
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+color: white;
+}
+.menu > * {
+    flex-grow: 1;
+    flex-basis: 0%;
+    padding: 10px;
+    text-align: center;
+    border: solid black 0.5px;
+    border-radius: 10px 10px 10px 10px;
+    background-color:#9DCD7C;
+    
+    }
+/*vision laatikon asettelu*/
+#vision {
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+font-size: 25px;
+color: black;
+align-items: center;
+margin: 10px;
+}
+
+#vision > * {
+    flex-grow: 1;
+    flex-basis: 0; /*lapset yhtä leveät*/
+    /*padding: 10px;*/
+    
+}
+
+#vision .vision-text{
+    flex-grow: 2;
+    padding: 10px;
+    
+}
+
+.vision-text p{
+    font-family: sans-serif;
+    text-align: left;
+    padding: 20px;
+}
+
+
+
+.visionfoto img
+{
+max-width: 100%;
+
+}
+
+#vision figure {
+display: none;
+}
+
+/*boxes-laatikko*/
+.boxes {
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}    
+.boxes > * {
+    
+    flex-grow: 1;
+    flex-basis: 100%;
+    text-align: left;
+    font-size: 14px;
+    margin: 10px 0 0 0;
+    background-color: white;
+    }
+
+   
+
+#specials  {
+        border: solid white 10px;
+             }
+       
+#events {
+    border: solid white 10px;
+ }
+.spe-event-news {
+    border: solid white 10px;
+}
+.boxes section h2 {
+    background-color: #CBCBCB; /*korjaa väri*/
+    padding: 10px;
+    border-bottom: solid white 10px;
+}
+.dates {
+    font-weight: bold ;
+}
+#news {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#news > * {
+    
+    flex-grow: 0;
+    flex-basis: 100%;
+}
+#news .dates {
+    flex-basis: 10%;
+}
+
+#news .events {
+    flex-basis: 50%;
+}
+
+/*kuvat ja logo*/
+figure img {
+    max-width: 100%;
+}
+.visionfoto {
+    max-width: 100%;
+
+}
+#tasty {
+    max-width: 100%;    
+    }
+#interior {
+    max-width: auto;   
+    }
+ 
+/*footter*/
+.addres {
+    color: white; 
+}
+
+.some {
+    color: white;
+    font-size: 15px;
+    margin-top: 10px;
+    
+}
+.some-logot {
+    float: right;
+    
+    }
+.some-logot i {
+    margin-right: 5px;
+        
+    }
+
+#black {
+    color: black;
+}
+    
+    /*tabletti säännöt*/
+@media screen and (min-width: 426px) {
+   #vision {
+    border: solid white 10px;
+    border-width: 10px 0 10px 0 10px;
+    font-size: 18px;
+    background-color: #E6DFC6;
+   }
+    #vision figure {
+       display: block;
+   }
+   .menu {
+       flex-direction: row; 
+    }
+    .boxes > * {
+        flex-basis: 0;
+    }
+    #news {
+        flex-basis: 100%;
+    } 
+
+}
+    /*desktop säännöt*/
+    @media screen and (min-width: 725px) {
+        #vision {
+            border: solid white 10px;
+    border-width: 10px 0 10px 0 10px;
+            font-size: 25px; 
+    }
+    
+    #news {
+        flex-basis: 0%; 
+        align-content: flex-start; 
+    }
+    
+    #news .events {
+        flex-basis: auto; 
+        margin-left:10px;
+    }
+   
+}
