@@ -1,36 +1,83 @@
 html{
     font-size: 62.5%;
 }
+
 p{
-    color: white;
+    color: black;
     padding: 10px;
     text-align: center;
     font-size: 1.4em;
     font-weight: bold;
 }
+footer {
+    font-size: 1.4em;
+
+}
+
 h2{
     font-size: 2rem;
     padding: 10px;
 }
-.color-red {
+
+.color-red  {
     background-color: red;
 }
+
+.color-red2  {
+    background-color: red;
+}
+
+.color-red3  {
+    background-color: red;
+}
+
 .color-blue {
     background-color:blue;
 }
+
 .color-green {
     background-color:green;
 }
 
-/*flex käyttö kappaleissa (p) */
-.parent > * {
-    flex-grow: 1
-    flex-basis: 0;
-    order:2;
+.color-blue2 {
+    background-color:blue;
 }
-.tupla {
+
+.color-green2 {
+    background-color:green;
+}
+
+.color-blue3 {
+    background-color:blue;
+}
+
+.color-green3 {
+    background-color:green;
+}
+
+
+.parent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.parent > * {
+    flex-basis: 0px;
+    flex-grow: 1;
+    order: 2;
+}
+
+.parent .color-blue2 {
     flex-grow: 2;
 }
-.order-1 {
+
+.parent .color-blue3 {
+    flex-grow: 2;
+}
+
+.parent .color-green3 {
     order: 1;
 }
+
+

@@ -5,15 +5,59 @@ html {
 body {
     font-family: 'Times New Roman', Times, serif;
     padding: 10px;
-    max-width: 60rem;/*leveyden määritys*/
 }
     
+figure img 
+{ 
+    max-width: 100%;
+    
+}
+
+#box {
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+#box > *{
+   
+    flex-grow: 1;
+    flex-basis: 100%;
+    
+}
+
+.caption-text {
+    padding: 10px; 
+    text-align: center;
+    position: relative;
+    height: 20px;
+    top: -43px;
+    color: white;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+@media  screen and (min-width : 426px) {
+    /* Tablet view: 2 tiles */
+    #box > * {
+        flex-basis: 50%; 
+     }
+ }
+
+ @media  screen and (min-width : 769px) {
+    /* Small desktop / ipad view: 3 tiles */
     
 
+    #box > * {
+        flex-basis: 33.33%; 
+     }
+ }
+ @media  screen and (min-width : 1025px) {
+    /* Medium desktop: 4 tiles */
+   
 
-
-
-
-@media screen and (max-width: 425px) {
-    
-    }
+    #box > * {
+        flex-basis: 25%; 
+     }
+ }

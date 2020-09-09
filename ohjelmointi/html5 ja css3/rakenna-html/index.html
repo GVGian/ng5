@@ -6,22 +6,47 @@
     <title>Document</title>
     <link rel="stylesheet" href="reset.css">
     <style>
-        #osa1 {
-            padding: 10px;
-            font-size: 1.6rem;
-
-        }
         .h1 {
             padding: 10px;
+            font-size: 2rem;
+        }
+
+        .p1 {
+            padding: 10px;
+            font-size: 1.5em;
         }
 
         .p2 {
             padding: 10px;
+            font-size: 1.5rem;
+        }
+        
+        .p3 {
+            font-size: 1.5rem;
         }
 
-        .p3 {
-            padding: 10px;
+        
+    section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    }
+
+    section > * {
+    padding: 10px;
+    flex-grow: 1;
+    flex-basis: 100%;
 }
+    
+figure img 
+{ 
+    max-width: 100%;
+}
+
+figure {
+    max-width: 100%;
+}
+
     </style>
 </head>
 <body>
@@ -55,7 +80,7 @@
         var section = document.createElement("section");
         var footteri = document.createElement("footer");
         var image = document.createElement("figure");
-
+        var kuva = document.createElement("img");
         var h1 = document.createElement("h1");
         var p1 = document.createElement("p");
         var p2 = document.createElement("p");
@@ -65,14 +90,9 @@
         
         var text0 = document.createTextNode("Tämä on artikkelin otsikko");
         var text1 = document.createTextNode("Ensimmäinen on kappale! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, corporis quidem. Architecto qui eius enim sapiente, in reiciendis perferendis. Enim quas maiores dicta magnam non? Hic quos quas dicta minima.");
-        var text2 = document.createTextNode("Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nesciunt distinctio, et nemo eius neque similique repudiandae iste sint. Accusantium beatae minima inventore vel laboriosam quos ullam eum, tenetur natus.");
+        var text2 = document.createTextNode("Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nesciunt distinctio, et nemo eius neque similique repudiandae iste sint. Accusantium beatae minima inventore vel laboriosam quos ullam eum, tenetur natus Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nesciunt distinctio, et nemo eius neque similique repudiandae iste sint. Accusantium beatae minima inventore vel laboriosam quos ullam eum, tenetur natus.");
         var text3 = document.createTextNode("@ 2019 Juhis");
-        //var kuva1 = document.getElementById("example");
         
-        //console.log(kuva1.getAttribute("src", "images\kuva0709.PNG"));
-        
-        
-
         // nimetään html-elementit
         ylatunniste.id="ylatunniste";
         section.id = "rinnakkain";
@@ -81,14 +101,14 @@
         p1.className = "p1";
         p2.className = "p2";
         p3.className = "p3";
-        k1.className = "k1";
+       
 
         // lisätään h1 ja p-sisällöt
         h1.appendChild(text0);
         p1.appendChild(text1);
         p2.appendChild(text2);
         p3.appendChild(text3);
-        //k1.appendChild(kuva1);
+        
 
         //lisätään h1 ja p1 -elementit ylatunnisteen sisään
         ylatunniste.appendChild(h1);
@@ -96,16 +116,17 @@
 
         //lisätään p-elementit sectionin sisään
         section.appendChild(p2);
-        //section.appendChild(image);
-        //image.appendChild(k1);
+        image.appendChild(kuva);
+        section.appendChild(image);
+        kuva.setAttribute("src", "images/kuva0709.PNG");
         
 
         //lisätään p-elementit footterin sisään
         footteri.appendChild(p3);
        
         // sijoitetaan html-elementit bodyn sisään
-        runko.appendChild(section); 
         runko.appendChild(ylatunniste); 
+        runko.appendChild(section); 
         runko.appendChild(footteri);
         //runko.appendChild(section);
 

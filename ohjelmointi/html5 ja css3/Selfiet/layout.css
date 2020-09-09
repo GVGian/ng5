@@ -1,0 +1,36 @@
+
+h1 {
+	font-size:80px;	
+	font-family: Arial;
+	}
+p{
+	font-size: 60px;
+	font-family: Arial;
+}		
+
+figcaption {
+    font-size: 60px;
+	font-family: Arial;
+}
+
+footer{
+    font-size: 60px;
+	font-family: Arial;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+div img{
+         max-width: 100%;
+        
+ }

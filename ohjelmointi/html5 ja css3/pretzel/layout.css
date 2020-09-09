@@ -6,7 +6,7 @@ html {
 #wrapper {
     font-family: 'Times New Roman', Times, serif;
     /*max-width: 60rem;/*leveyden määritys*/
-    background-image: url("/images/grunge.png");
+    background-image: url("./image/grunge.png");
     background-position: top left;
     background-repeat: repeat-x;
     background-color:#FCFAF5;
@@ -27,7 +27,7 @@ html {
     font-size: 18px;
     font-family: sans-serif;
     background-color: #5F8288;
-    background-image: url("/images/special-bg.png");
+    background-image: url("./image/special-bg.png");
     background-position: bottom;
     background-repeat: repeat-x;
     color: white;

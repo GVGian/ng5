@@ -1,10 +1,19 @@
 html {
-    font-size: 62.5%;
+    font-size: 62.5%; 
+    /* 62.5% x 16px = 10px
+    Tämä tarkoittaa, että fonttikoko 1rem on kaikissa html-elementin lapsissa 10px. 
+    Resetissä font-size: 100%; tarkoittaa webbistandardissa 16px.
+    */
 }
 body {
     padding: 10px; 
    
 }
+
+.taustavari {
+    background-color: #88aabb;
+}
+
 section {
     background-color: #bbbbbb;
     margin-bottom: 10px; 
@@ -14,10 +23,10 @@ h2 {
     text-align: right;
     font-size: 2rem;
     font-weight: bold;
-    background-color: #88aabb;
+    background-color:#586F7A;
     padding: 10px;
     text-transform: lowercase;
-    margin: -10px 10px 10px 10px;
+    margin: -10px -10px 10px 0;
 }
 
 h3 {
@@ -42,7 +51,7 @@ ul, li {
 
 }
 pre {
-    font-size: 1.4rem;
+    font-size: 1rem;
     margin-bottom: 10px;
     font-family: 'Courier New', Courier, monospace;
     margin-left: 1rem;
@@ -75,15 +84,16 @@ pre {
 }
 
 .banneriteksti {
-    float: left; 
-    width: 25%; 
-    text-align: center; 
-    padding: 10px; 
-    background: white; 
-    color: black; 
+    float: left;
+    width: 20%;
+    text-align: left;
+    font-size: 100%;
+    background-color: white;
+    padding: 1.5em;
+    color: black;
     border: solid black 1px;
-    border-width: 0 1px 1px 0; 
-    margin: -11px -0,5px 0.2em -11px;
+    border-width: 0 1px 1px 0;
+    margin:-11px 20px 20px -11px 
 }
 .banner-right {
     float: right; 
@@ -98,6 +108,6 @@ pre {
     color: black; 
     border: solid black 1px;
     border-width: 1px 0 1px 1px; 
-    margin: 0.2em -1px 0.2em 0.5em;
+    margin: 0.2em -11px 0.2em 0.5em;
 
 }
