@@ -3,6 +3,10 @@ html {
     
 }
 
+body {
+    font-size: 1.6rem;
+}
+
 #wrapper {
     font-family: 'Times New Roman', Times, serif;
     /*max-width: 60rem;/*leveyden määritys*/

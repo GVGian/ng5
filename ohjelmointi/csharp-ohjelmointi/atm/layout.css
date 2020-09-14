@@ -1,0 +1,24 @@
+tml {
+    font-size: 62,5%;
+}
+body {
+    background-color:#84C15B;
+   
+    font-family: Gotham, Helvetica,Arial, sans-serif;
+    padding: 0px;
+    border: solid white 10px;
+}
+
+article {
+    padding: 10px;
+}
+
+figure img 
+{ 
+    max-width: 100%;
+    
+}
+
+figure {
+    display: block;
+}

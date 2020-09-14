@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./layout.css">
+    <title>ATM</title>
+</head>
+<body>
+    <article>
+        <section>
+            <h1>Pankkiautomaatti</h1>
+            <p>Ohjelma on konsolissa toimiva Pankkiautomaattisimulaattori, jonka käyttökielenä on englanti. Ohjelman koodasivat Gian Villanueva, Sirene Karri ja Anniina Aarnio.</p>
+            <ol>
+                <li>Ohjelma pyytää käyttäjää laittamaan pin koodin</li>
+                <li>Jos käyttäjän laittama pin koodi on oikein, ohjelma jatkaa eteenpäin. Ohjelmaan on tallennettu pin koodi (1234) valmiiksi. 
+                </li>
+                <li>Jos käyttäjän antama pin koodin on väärin, ohjelma loppuu</li>
+                <li>Ohjelma siirtyy valikkoon, jossa ensimmäisenä vaihtoehtona käyttäjä voi tarkistaa tilin saldon</li>
+                <li>Toisena vaihtoehtona käyttäjä voi nostaa tililtään rahaa</li>
+                <li>Kolmantena valikkovaihtoehtona on ohjelman lopetus</li>
+                <li>Jos käyttäjä valitsee saldon tarkastamisen, printtaa ohjelma käyttäjän saldon (joka on määritelty valmiiksi summaksi 199,9 €) ja palaa takaisin valikkoon tarkista saldo/nosta rahaa/lopeta </li>
+                <li>Jos käyttäjä haluaa nostaa rahaa, kysyy ohjelma summaa, jonka käyttäjä haluaa nostaa </li>
+                <li>Tarkista saldo/nosta rahaa/lopeta valikon lopeta kohta lopettaa ohjelman </li>
+                <li>Jos käyttäjä yrittää rahaa nostaessa valita negatiivisen arvon, siirtyy ohjelma eteenpäin kohtaan 13</li>
+                <li>Jos käyttäjä yrittää nostaa tililtä enemmän rahaa kuin tilillä on katetta, siirtyy ohjelma eteenpäin kohtaan 14</li>
+                <li>Ohjelma kysyy, haluaako käyttäjä tulostaa kuitin </li>
+                <li>Käyttäjän yrittäessä laittaa negatiivisen arvon rahaa nostaessa, ohjelma ilmoittaa hyväksyvänsä vain positiivisen arvon ja ohjelma palaa takaisin valikkoon tarkista saldo/nosta rahaa/lopeta </li>
+                <li>Käyttäjän yrittäessä nostaa enemmän rahaa, kuin tilillä on katetta ilmoittaa ohjelma, ettei tämä onnistu ja käyttäjää pyydetään poistamaan pankkikortti </li>
+                <li>Jos käyttäjä haluaa tulostaa kuitin, siirtyy ohjelma eteenpäin kohtaan 17</li>
+                <li>Jos käyttäjä ei halua tulostaa kuittia, siirtyy ohjelma eteenpäin kohtaan 18 </li>
+                <li>Halutessaan tulostaa kuitin, ohjelma printtaa näkyviin käyttäjän nostaman rahasumman sekä tilille jäävän saldon </li>
+                <li>Jos käyttäjä ei halunnut tulostaa kuittia, ohjelma pyytää käyttäjää ottamaan rahat ja poistamaan pankkikorttinsa</li>
+            </ol>
+            <figure>
+                <img src="./images/kayttajatarina.png" alt="">
+                <figcaption>UL-kaavio</figcaption>
+            </figure>
+        </section>
+        <section>
+            <h1>Kehitysideat</h1>
+            <ol>
+                <li>Tehdä ohjelmasta graafinen käyttöliittymä esimerkiksi Windows Formsilla</li>
+                <li>Lisätä toimintoja (esim. tallenna rahaa, vaihda pin koodi…) </li>
+                <li>Koodin siistiminen eri luokkiin ja metodeihin </li>
+                <li>Korjata bugi. Valikossa tarkista saldo/nosta rahaa/lopeta pystyy syöttämään minkä tahansa numeron, koska switch-lausekkeesta puuttuu default-haara, jos kaikki muut case-haarat epäonnistuvat </li>
+            </ol>
+        </section>
+        <footer>
+            &copy; 2020 Gian Villanueva, Sirene Karri ja Anniina Aarnio 
+        </footer>
+    </article>  
+</body>
+</html>
