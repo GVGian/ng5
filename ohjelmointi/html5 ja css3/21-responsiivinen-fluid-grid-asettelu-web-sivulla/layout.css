@@ -1,0 +1,154 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    background-color:whitesmoke;
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+.col-1 section {
+    background-color: orange;
+    float: left;
+    height: 800px;
+    margin-right: 1%;
+    width: 100.0000%;
+    height: 100px;
+}
+.col-1 section:last-child {
+    margin-right: 0;
+}
+
+.col-2 section {
+    background-color: teal;
+    float: left;
+    height: 800px;
+    height: 100px;
+    margin-right: 1%;
+    width: 49.5000%;
+}
+.col-2 section:last-child {
+    margin-right: 0;
+}
+
+.col-3 section {
+    background-color: blue;
+    float: left;
+    height: 800px;
+    height: 100px;
+    margin-right: 1%;
+    width: 32.6667%;
+}
+.col-3 section:last-child {
+    margin-right: 0;
+}
+
+.col-4 section {
+    background-color: greenyellow;
+    float: left;
+    height: 800px;
+    height: 100px;
+    margin-right: 1%;
+    width: 24.2500%;
+}
+.col-4 section:last-child {
+    margin-right: 0;
+}
+
+.col-5 section {
+    background-color: gray;
+    float: left;
+    height: 800px;
+    height: 100px;
+    margin-right: 1%;
+    width: 19.2000%;
+}
+.col-5 section:last-child {
+    margin-right: 0;
+}
+
+.col-6 section {
+    background-color:mediumorchid;
+    float: left;
+    height: 800px;
+    height: 100px;
+    margin-right: 1%;
+    width: 15.8333%;
+}
+.col-6 section:last-child {
+    margin-right: 0;
+}
+
+.col-7 section {
+    background-color: purple;
+    float: left;
+    height: 800px;
+    height: 100px;
+    margin-right: 1%;
+    width: 13.4286%;
+}
+.col-7 section:last-child {
+    margin-right: 0;
+}
+
+.col-8 section {
+    background-color:yellow;
+    float: left;
+    height: 800px;
+    height: 100px;
+    margin-right: 1%;
+    width: 11.6250%;
+}
+.col-8 section:last-child {
+    margin-right: 0;
+}
+
+.col-9 section {
+    background-color: black;
+    float: left;
+    height: 800px;
+    height: 100px;
+    margin-right: 1%;
+    width: 10.2222%;
+}
+.col-9 section:last-child {
+    margin-right: 0;
+}
+
+.col-10 section {
+    background-color:burlywood;
+    float: left;
+    height: 800px;
+    height: 100px;
+    margin-right: 1%;
+    width: 9.1000%;
+}
+.col-10 section:last-child {
+    margin-right: 0;
+}
+
+.col-11 section {
+    background-color: violet;
+    float: left;
+    height: 800px;
+    margin-right: 1%;
+    width: 8.1818%;
+    height: 100px;
+}
+.col-11 section:last-child {
+    margin-right: 0;
+}
+
+.col-12 section {
+    background-color: pink;
+    float: left;
+    height: 800px;
+    margin-right: 1%;
+    width: 7.4167%;
+    height: 100px;
+}
+.col-12 section:last-child {
+    margin-right: 0;
+}
