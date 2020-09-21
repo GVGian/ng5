@@ -1,0 +1,45 @@
+html {
+    font-size: 62,5%;
+    
+}
+
+body {
+    padding: 10px;
+    font-family: Gotham, Helvetica,Arial, sans-serif;
+}
+
+h1 {
+   color: rgb(202,199,199);
+   font-size: 2rem;
+   text-transform: lowercase;
+   letter-spacing: 1rem;
+   padding-bottom: 15px;
+}
+.wrapper {
+    padding: 10px;
+    background-color:rgb(202,199,199);
+    
+}
+.wrapper ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+}
+
+.wrapper a {
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    font-weight: bold;
+
+}
+#placeholder {
+    
+    max-width: 100%;
+}
+
+img {
+    border: solid 15px white;
+    margin-bottom: 10px;
+}
