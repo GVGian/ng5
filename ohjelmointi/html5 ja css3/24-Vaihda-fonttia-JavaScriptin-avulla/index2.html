@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muuta fonttia JavaScriptin avulla</title>
+    <link rel="stylesheet" href="layout.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Grenze:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Turret+Road:wght@200&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="./scripts2/fontStyle.js"></script>
+    
+
+</head>
+<body>
+
+    <ol id="fontti">
+        <li>Ensimmäinen napin painallus muuttaa fonttityylin "Roboto"</li>
+        <li>Toinen napin painallus muuttaa fonttityylin "Mansalva"</li>
+        <li>Kolmas napin painallus muuttaa fonttityylin "Grenze"</li>
+        <li>Neljäs napin painallus muuttaa fonttityylin "Turret Road"</li>
+        <li>Viides napin painallus muuttaa fonttityylin "Courier New"</li>
+    </ol>
+
+    <p>Käytössäsi on nyt fontti <span id="p">"Courier New"</span> </p>
+    <p>Nyt on kierros <span id="p1">"0"</span> </p>
+    
+    <button class="button1" type="button" onclick="changeFontstyle(this); return false;">Muuta fontti</button>
+
+</body>
+</html>

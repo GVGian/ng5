@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaihda fonttia JavaScriptin avulla</title>
+    <link rel="stylesheet" href="layout.css">
+    <script type="text/javascript" src="./scripts/fontSize.js"></script>
+    
+
+</head>
+<body>
+
+    <ol id="fontti">
+        <li>Ensimmäinen napin painallus muuttaa fonttikokoon 20px</li>
+        <li>Toinen napin painallus muuttaa fonttikokoon 24px</li>
+        <li>Kolmas napin painallus muuttaa fonttikokoon 28px</li>
+        <li>Neljäs napin painallus muuttaa fonttikokoon 32px</li>
+        <li>Viides napin painallus muuttaa fonttikokoon 20px</li>
+    </ol>
+    <p>Nyt on kierros <span id="p1">"0"</span> </p>
+    <button class="button1" type="button" onclick="changeFontsize(this); return false;">Fontin koko</button>
+
+</body>
+</html>
