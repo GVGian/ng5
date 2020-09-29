@@ -1,7 +1,7 @@
 /*
 Turret Road
 */
-var tab = ['', 'Roboto', 'Mansalva', 'Grenze', 'Arial' ];
+var tab = ['', 'Roboto', 'Mansalva', 'Grenze', '"Turret Road"' ];
 
 document.getElementById('fontti').style.fontFamily = tab[0];
 function changeFontstyle() {
@@ -27,7 +27,7 @@ document.getElementById("p1").innerHTML = "3";
 else if (document.getElementById('fontti').style.fontFamily == tab[3])
 {
 document.getElementById('fontti').style.fontFamily = tab[4];
-document.getElementById("p").innerHTML = "Arial";
+document.getElementById("p").innerHTML = "Turret Road";
 document.getElementById("p1").innerHTML = "4";
 }
 else if (document.getElementById('fontti').style.fontFamily == tab[4])
