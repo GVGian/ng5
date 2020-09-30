@@ -1,6 +1,9 @@
 function changeUser(){
-const myHeading = document.querySelector('h1');
-myHeading.textContent = 'Mozilla is cool, Nimi';
+    let myName = prompt('Please enter your name.');
+    localStorage.setItem('name', myName);
+    const myHeading = document.querySelector('h1');
+    myHeading.textContent = 'Mozilla is cool, ' + myName;
+
 }
 
 function changeUser2(){
