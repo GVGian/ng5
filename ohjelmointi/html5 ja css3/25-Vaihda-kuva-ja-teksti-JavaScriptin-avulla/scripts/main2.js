@@ -6,7 +6,7 @@ function changeUser(){
 
 }
 
-function changeUser3(){
+function changeUser2(){
     const myHeading = document.querySelector('h1');
     myHeading.textContent = 'Is Brave even Cooler?';
     document.getElementById('btn1').style.backgroundColor = 'White';  
